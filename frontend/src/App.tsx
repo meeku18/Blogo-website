@@ -13,8 +13,8 @@ import { Publish } from './pages/Publish'
       <>
         <BrowserRouter>
           <Routes>
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/" element={<Signin />} />
+            <Route path="/" element={<Signup />} />
+            <Route path="/sigin" element={<Signin />} />
             <Route path="/blogs" element={<Blogs/>}/>
             <Route path="/blog/:id" element={<Blog />} />
             <Route path="/publish" element={<Publish/>}/>
