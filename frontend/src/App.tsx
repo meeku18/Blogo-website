@@ -5,7 +5,6 @@ import { Signin } from './pages/Signin'
 import { Blog } from './pages/Blog'
 import { Blogs } from './pages/Blogs'
 import { Publish } from './pages/Publish'
-import { Home } from './pages/Home'
 
 
   function App() {
@@ -15,11 +14,11 @@ import { Home } from './pages/Home'
         <BrowserRouter>
           <Routes>
             <Route path="/signup" element={<Signup />} />
-            <Route path="/signin" element={<Signin />} />
+            <Route path="/" element={<Signin />} />
             <Route path="/blogs" element={<Blogs/>}/>
             <Route path="/blog/:id" element={<Blog />} />
             <Route path="/publish" element={<Publish/>}/>
-            <Route path='/' element ={<Home></Home>}/>
+            
           </Routes>
         </BrowserRouter>
       </>
