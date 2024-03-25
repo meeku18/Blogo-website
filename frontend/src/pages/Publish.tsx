@@ -1,14 +1,9 @@
-import { useEffect, useState } from "react"
+import {  useState } from "react"
 import { Appbar } from "../components/AppBar"
 import axios from "axios"
 import { BACKEND_URL } from "../config"
 import { useNavigate } from "react-router-dom"
-interface text{
-    title:string
-}
-interface desc{
-    description:string
-}
+
 export const Publish = ()=>{
     const [title,setTitle] = useState("");
     const [description,setDescription] = useState("");
